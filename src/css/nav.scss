@@ -5,10 +5,9 @@
     border-radius: 50px;
     bottom: 80px;
     & .link {
-      &:hover{
-        background-color:yellow;
+      &:hover {
+        background-color: yellow;
       }
-      opacity: 1;
       width: 100px;
       border-radius: 50%;
       border: 1px solid red;
@@ -22,7 +21,6 @@
       &:last-child {
         margin-right: 20px;
       }
-    
     }
 
     & li > .icon {
@@ -51,21 +49,37 @@
       cursor: pointer;
     }
   }
-  
+
   .nav-links.open {
     width: 100%;
     opacity: 1;
+    display: flex;
+  }
+  .nav-links.closed{
+    display: none;
   }
   .nav-links {
+    
     transition: opacity 0.3s linear;
-    transition: width 0.3s linear;
+    transition: height 0.3s linear;
     position: fixed;
-    bottom: 120px;
     width: 0%;
+    bottom: 120px;
     opacity: 0;
     top: 0;
-    height: 100%;
+    height: 200px;
     background: #211f1f;
+    .link-1 {
+      border-radius: 25px;
+      display: flex;
+      font-size: 0.8rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 50px;
+      margin-top: 15px;
+    }
     ul {
       padding: 5px;
       display: flex;
@@ -87,99 +101,28 @@
         //background-color: white;
         &:hover {
           background: white;
-          color:black;
-          .icon{
-            color:black;
-
+          color: black;
+          .icon {
+            color: black;
           }
-          a{
-            color:black;
+          a {
+            color: black;
             font-weight: bold;
           }
         }
         .icon {
           width: 20px;
           height: 20px;
-          color:#fff
+          color: #fff;
         }
-        a{
-          color:white;
+        a {
+          color: white;
           font-weight: bold;
         }
       }
     }
   }
 }
-
-.mt-100 {
-  margin-top: 100px;
-}
-.img-container {
-  .img {
-    border: 1px solid black;
-    width: 250px;
-    height: 300px;
-    border-radius: 48%;
-    background-image: url(../public/ulrich.jpg);
-    background-size: cover; /* Assure que l'image de fond couvre complètement le conteneur */
-    background-position: center center; /* Centre l'image de fond */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
-    position: relative;
-    z-index: -1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-}
-
-body {
-  //background: linear-gradient(to bottom, #904e95, #667eea, #667eea);
-}
-@keyframes disparition {
-  0% {
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-  }
-
-  100% {
-    width: 0%;
-    height: 0%;
-    font-size: 0rem;
-    border: 0px;
-  }
-}
-@keyframes apparition {
-  0% {
-    width: 0%;
-    height: 0%;
-    font-size: 0rem;
-  }
-
-  100% {
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-  }
-}
-
-.footer {
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  //background-color: #333;
-  color: #fff;
-  text-align: center;
-  color: red;
-  bottom: 0;
-}
-
-.App {
-  .about {
-    height: 500px;
-  }
-  .education {
-    height: 500px;
-  }
+*{
+  border: 1px solid salmon;
 }

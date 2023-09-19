@@ -8,7 +8,6 @@ const Footer: FunctionComponent<Props>=({})=>{
 
    return (
      <div className='footer'> 
-    footer
      </div>
     );
 };

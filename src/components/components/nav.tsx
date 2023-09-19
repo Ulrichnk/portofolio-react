@@ -49,9 +49,9 @@ const NavBar: FunctionComponent<Props> = () => {
     // }
   };
 
-  const navClass = state ? "nav-links open" : "nav-links ";
+  const navClass = state ? "nav-links open" : "nav-links closed ";
   return screenSize.width <= 790 ? (
-    <div >
+    <div>
       <div className="burger" onClick={(e) => handleClik(e)}>
         <CiMenuBurger className="b" />
       </div>
@@ -63,9 +63,10 @@ const NavBar: FunctionComponent<Props> = () => {
               handleClik(e);
             }}
           >
-            <AiFillHome className="icon" />
-
-            <a href="/">Home</a>
+            <a href="/#" className="link-1">
+              <AiFillHome className="icon" />
+              <div>Home </div>
+            </a>
           </li>
           <li
             className="link"
@@ -73,9 +74,10 @@ const NavBar: FunctionComponent<Props> = () => {
               handleClik(e);
             }}
           >
-            <RiContactsFill className="icon" />
-
-            <a href="#about-me">About me</a>
+            <a href="#about-me" className="link-1">
+              <RiContactsFill className="icon" />
+              <div>About me</div>
+            </a>
           </li>
           <li
             className="link"
@@ -83,8 +85,10 @@ const NavBar: FunctionComponent<Props> = () => {
               handleClik(e);
             }}
           >
-            <FaUserGraduate className="icon" />
-            <a href="#education">Education</a>
+            <a href="#competences" className="link-1">
+              <FaUserGraduate className="icon" />
+              <div>Compétences</div>
+            </a>
           </li>
           <li
             className="link"
@@ -92,8 +96,10 @@ const NavBar: FunctionComponent<Props> = () => {
               handleClik(e);
             }}
           >
-            <FaSuitcase className="icon" />
-            <a href="#experience">Expériences</a>
+            <a href="#experience" className="link-1">
+              <FaSuitcase className="icon" />
+              <div>Expériences</div>
+            </a>
           </li>
           <li
             className="link"
@@ -101,8 +107,10 @@ const NavBar: FunctionComponent<Props> = () => {
               handleClik(e);
             }}
           >
-            <AiOutlineFundProjectionScreen className="icon" />
-            <a href="#project">Projects</a>
+            <a href="#project" className="link-1">
+              <AiOutlineFundProjectionScreen className="icon" />
+              <div>Projects</div>
+            </a>
           </li>
           <li
             className="link"
@@ -110,8 +118,10 @@ const NavBar: FunctionComponent<Props> = () => {
               handleClik(e);
             }}
           >
-            <GrMail className="icon" />
-            <a href="#contact">Contact me</a>
+            <a href="#contact" className="link-1">
+              <GrMail className="icon" />
+              <div>Contact me</div>
+            </a>
           </li>
         </ul>
       </div>
@@ -129,7 +139,7 @@ const NavBar: FunctionComponent<Props> = () => {
           <li className="link">
             <AiFillHome className="icon" />
 
-            <a href="#">Home</a>
+            <a href="/#">Home</a>
           </li>
           <li className="link">
             <RiContactsFill className="icon" />
@@ -139,7 +149,7 @@ const NavBar: FunctionComponent<Props> = () => {
           <li className="link">
             {" "}
             <FaUserGraduate className="icon" />
-            <a href="#education">Education</a>
+            <a href="#competences">Compétences</a>
           </li>
           <li className="link">
             {" "}

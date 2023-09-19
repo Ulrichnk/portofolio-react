@@ -1,0 +1,133 @@
+@media (min-width: 780px) {
+  .contact {
+    margin-right: 10px;
+    margin-left: 10px;
+    min-height: 50vh;
+
+    p {
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      color: black;
+      background-color: #f1f1f1;
+      justify-content: space-around;
+      .input {
+        width: 300px;
+        height: 50px;
+      }
+    }
+    .cont-input {
+      margin-left: 50px;
+      & .label {
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        width: 400px;
+        height: 100px;
+        & .input {
+          width: 300px;
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid black;
+          padding: 10px;
+          font-size: 1em;
+        }
+      }
+      & .label-1 {
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        width: 500px;
+        height: 200px;
+        & .input-msg {
+          width: 450px;
+          height: 150px;
+          border-radius: 10px;
+          border: 1px solid black;
+          padding: 10px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  .contact {
+    min-height: 50vh;
+    margin-bottom: 100px;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      color: black;
+      background-color: #f1f1f1;
+      justify-content: space-around;
+      .input {
+        width: 300px;
+        height: 50px;
+      }
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cont-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .label {
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        max-width: 315px;
+        height: 100px;
+        & .input {
+          width: 300px;
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid black;
+          padding: 10px;
+          font-size: 1em;
+        }
+      }
+      & .label-1 {
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        max-width: 355px;
+        height: 200px;
+        & .input-msg {
+          width: 350px;
+          height: 150px;
+          border-radius: 10px;
+          border: 1px solid black;
+          padding: 10px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

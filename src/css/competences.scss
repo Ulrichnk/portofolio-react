@@ -1,0 +1,26 @@
+.competences {
+    margin-right: 10%;
+    margin-left: 10%;
+    min-height: 50vh;
+    h2{
+        color:black;
+        text-align: center;
+    }
+    p {
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .cont-competences{
+        display: flex;
+        flex-wrap: wrap;
+        gap:25px;
+        .competence{
+            border-radius: 25px;
+            background: #f1f1f1;
+            width: 350px;
+            height: 400px;
+        }
+        
+    }
+  }
+  

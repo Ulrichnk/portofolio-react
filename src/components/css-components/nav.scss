@@ -1,0 +1,52 @@
+.nav {
+  position: relative;
+  background: #7238fb;
+  width: 100vw;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav button span {
+  width: 100%;
+  height: 5px;
+  background-color: red;
+}
+
+.nav ul {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.nav li {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.8s ease-in-out;
+}
+
+.nav a:hover {
+  color: blue;
+  font-weight: 700;
+}

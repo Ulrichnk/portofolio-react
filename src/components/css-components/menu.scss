@@ -1,0 +1,44 @@
+.dropdown {
+  max-width: 300px;
+  border-radius: 5px;
+  margin: 100px auto;
+  color: white;
+  background: #2389fc;
+  overflow: hidden;
+}
+
+.btn-top {
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2389fc;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-top img {
+  width: 20px;
+}
+
+.bloc-links {
+  padding: 0 20px;
+  transition: height 0.2s ease-in-out;
+  overflow: hidden;
+  height: 0;
+}
+.bloc-links li {
+  padding: 5px 0;
+}
+.bloc-links li a {
+  font-size: 18px;
+  color: white;
+  margin-left: 5px;
+}
+.bloc-links li:last-child {
+  padding-bottom: 25px;
+}

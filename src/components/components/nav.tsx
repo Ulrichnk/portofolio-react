@@ -1,5 +1,4 @@
 import React, { FunctionComponent, useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { RiContactsFill } from "react-icons/ri";
 import { BsHeartPulseFill } from "react-icons/bs";
@@ -30,7 +29,7 @@ const NavBar: FunctionComponent<Props> = () => {
     };
     // Ajouter un écouteur d'événement pour redimensionner la fenêtre
     window.addEventListener("resize", handleResize);
-    // Nettoyer l'écouteur d'événement lors du démontage du composant
+    // Nethrefyer l'écouteur d'événement lors du démontage du composant
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -52,12 +51,12 @@ const NavBar: FunctionComponent<Props> = () => {
 
   const navClass = state ? "nav-links open" : "nav-links ";
   return screenSize.width <= 790 ? (
-    <div className="">
+    <div >
       <div className="burger" onClick={(e) => handleClik(e)}>
         <CiMenuBurger className="b" />
       </div>
       <div ref={navRef} className={navClass}>
-        <ul className="flex-column">
+        <ul className="">
           <li
             className="link"
             onClick={(e) => {
@@ -66,7 +65,7 @@ const NavBar: FunctionComponent<Props> = () => {
           >
             <AiFillHome className="icon" />
 
-            <NavLink to="/">Home</NavLink>
+            <a href="/">Home</a>
           </li>
           <li
             className="link"
@@ -76,7 +75,7 @@ const NavBar: FunctionComponent<Props> = () => {
           >
             <RiContactsFill className="icon" />
 
-            <NavLink to="/about-me">About me</NavLink>
+            <a href="#about-me">About me</a>
           </li>
           <li
             className="link"
@@ -85,7 +84,7 @@ const NavBar: FunctionComponent<Props> = () => {
             }}
           >
             <FaUserGraduate className="icon" />
-            <NavLink to="/education">Education</NavLink>
+            <a href="#education">Education</a>
           </li>
           <li
             className="link"
@@ -94,7 +93,7 @@ const NavBar: FunctionComponent<Props> = () => {
             }}
           >
             <FaSuitcase className="icon" />
-            <NavLink to="/experience">Expériences</NavLink>
+            <a href="#experience">Expériences</a>
           </li>
           <li
             className="link"
@@ -103,7 +102,7 @@ const NavBar: FunctionComponent<Props> = () => {
             }}
           >
             <AiOutlineFundProjectionScreen className="icon" />
-            <NavLink to="/project">Projects</NavLink>
+            <a href="#project">Projects</a>
           </li>
           <li
             className="link"
@@ -112,7 +111,7 @@ const NavBar: FunctionComponent<Props> = () => {
             }}
           >
             <GrMail className="icon" />
-            <NavLink to="/contact">Contact me</NavLink>
+            <a href="#contact">Contact me</a>
           </li>
         </ul>
       </div>
@@ -130,32 +129,32 @@ const NavBar: FunctionComponent<Props> = () => {
           <li className="link">
             <AiFillHome className="icon" />
 
-            <NavLink to="/">Home</NavLink>
+            <a href="#">Home</a>
           </li>
           <li className="link">
             <RiContactsFill className="icon" />
 
-            <NavLink to="/about-me">About me</NavLink>
+            <a href="#about-me">About me</a>
           </li>
           <li className="link">
             {" "}
             <FaUserGraduate className="icon" />
-            <NavLink to="/education">Education</NavLink>
+            <a href="#education">Education</a>
           </li>
           <li className="link">
             {" "}
             <FaSuitcase className="icon" />
-            <NavLink to="/experience">Expériences</NavLink>
+            <a href="#experience">Expériences</a>
           </li>
           <li className="link">
             {" "}
             <AiOutlineFundProjectionScreen className="icon" />
-            <NavLink to="/project">Projects</NavLink>
+            <a href="#project">Projects</a>
           </li>
           <li className="link">
             {" "}
             <GrMail className="icon" />
-            <NavLink to="/contact">Contact me</NavLink>
+            <a href="#contact">Contact me</a>
           </li>
         </ul>
       </div>

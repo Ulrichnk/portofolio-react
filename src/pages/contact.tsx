@@ -7,8 +7,8 @@ type Props={
 const Contact: FunctionComponent<Props>=({})=>{
 
    return (
-     <div> 
-conatct
+     <div className='contact' id='contact'> 
+contact
      </div>
     );
 };

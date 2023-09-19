@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React, {  } from "react";
 import "./App.scss";
 import { NavLink, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
@@ -16,17 +16,13 @@ function App() {
   return (
     <div className="App">
       <div className="body">
-        {" "}
+        <Home />
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-me" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Pages404 />} />
-        </Routes>
+        <About />
+        <Education />
+        <Experience />
+        <Project />
+        <Contact />
       </div>
       <Footer />
     </div>

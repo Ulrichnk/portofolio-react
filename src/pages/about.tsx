@@ -7,7 +7,7 @@ type Props={
 const About: FunctionComponent<Props>=({})=>{
 
    return (
-     <div> 
+     <div className='about' id='about'> 
         about
      </div>
     );

@@ -7,7 +7,7 @@ type Props={
 const Experience: FunctionComponent<Props>=({})=>{
 
    return (
-     <div> 
+     <div className='experience' id='experience'> 
 experience
      </div>
     );

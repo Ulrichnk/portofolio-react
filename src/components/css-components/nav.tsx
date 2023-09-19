@@ -5,7 +5,6 @@ import React, {
   useState,
 } from "react";
 import "./nav.scss";
-import { NavLink } from "react-router-dom";
 
 type Props = {
   //define your props here
@@ -16,27 +15,25 @@ type Props = {
 };
 
 const NaVBar: FunctionComponent<Props> = () => {
-  const [toggle, setToggle] = useState<Boolean>(false);
+  const [hrefggle, sethrefggle] = useState<Boolean>(false);
   const img: React.RefObject<HTMLImageElement> = useRef(null);
   const blocLinks: React.RefObject<HTMLImageElement> = useRef(null);
 
   const handle = (e: any) => {
     if (blocLinks.current) {
       blocLinks.current.style.display = "none";
-      
-
     }
 
     e.preventDefault();
     console.log(blocLinks.current?.style.height);
 
-    if (!toggle && img.current && blocLinks.current) {
+    if (!hrefggle && img.current && blocLinks.current) {
       blocLinks.current.style.height = "200px";
-      setToggle(!toggle);
+      sethrefggle(!hrefggle);
       return;
     }
     if (img.current && blocLinks.current) {
-      setToggle(!toggle);
+      sethrefggle(!hrefggle);
       blocLinks.current.style.height = "0px";
       return;
     }
@@ -56,25 +53,23 @@ const NaVBar: FunctionComponent<Props> = () => {
         </button>
       </div>
 
-      
-        <ul>
-          <li>
-            <NavLink to="/" className="n">
-              Home
-            </NavLink>
-          </li>{" "}
-          <li>
-            <NavLink to="/" className="n">
-              Cv
-            </NavLink>
-          </li>{" "}
-          <li>
-            <NavLink to="/" className="n">
-              Contact
-            </NavLink>
-          </li>{" "}
-        </ul>
-      
+      <ul>
+        <li>
+          <a href="/" className="n">
+            Home
+          </a>
+        </li>{" "}
+        <li>
+          <a href="/" className="n">
+            Cv
+          </a>
+        </li>{" "}
+        <li>
+          <a href="/" className="n">
+            Contact
+          </a>
+        </li>{" "}
+      </ul>
     </div>
   );
 };

@@ -7,7 +7,7 @@ type Props={
 const Project: FunctionComponent<Props>=({})=>{
 
    return (
-     <div> 
+     <div className='project' id='project'> 
 project
      </div>
     );

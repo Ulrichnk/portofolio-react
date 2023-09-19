@@ -6,7 +6,7 @@ type Props = {
 
 const Home: FunctionComponent<Props> = ({}) => {
   return (
-    <div className="mt-100">
+    <div className="mt-100 home " id="home">
       <h1 className="txt-center">
         <span data-letter="H">H</span>
         <span data-letter="i">i</span>
